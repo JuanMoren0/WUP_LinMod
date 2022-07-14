@@ -42,7 +42,9 @@ plot(SIMS~ARM,data= data)
 Looking at the scatter plot i can see that there is a linear relationship between the Simulation and Arms
 
 ### Numerical results
-
+```{r}
+cor(SIMS~ARM,data=data)
+```
 
 ### Inferential  (Build model.1)
 
