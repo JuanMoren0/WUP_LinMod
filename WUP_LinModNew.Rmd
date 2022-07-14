@@ -45,8 +45,14 @@ Looking at the scatter plot i can see that there is a linear relationship betwee
 ```{r}
 cor(SIMS~ARM,data=data)
 ```
+The coefficient is close to one meaning that the simulation isn't far off with its data but
 
 ### Inferential  (Build model.1)
+```{r}
+model.1 <- lm(Height~dadheight,data=davisdata)
+summary.lm(model.1)
+```
+
 
 #### Predict at target point
 
