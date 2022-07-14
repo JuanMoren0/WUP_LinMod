@@ -52,6 +52,7 @@ The coefficient is close to one meaning that the simulation isn't far off with i
 model.1 <- lm(SIMS~ARM,data=data)
 summary.lm(model.1)
 ```
+the slope is 0.5 and its explaing 46% of the data that wasnt explained by earlier data tables.
 
 
 #### Predict at target point
