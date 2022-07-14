@@ -45,11 +45,11 @@ Looking at the scatter plot i can see that there is a linear relationship betwee
 ```{r}
 cor(SIMS~ARM,data=data)
 ```
-The coefficient is close to one meaning that the simulation isn't far off with its data but
+The coefficient is close to one meaning that the simulation isn't far off with its data but still not a completely strong enough data.
 
 ### Inferential  (Build model.1)
 ```{r}
-model.1 <- lm(Height~dadheight,data=davisdata)
+model.1 <- lm(SIMS~ARM,data=data)
 summary.lm(model.1)
 ```
 
