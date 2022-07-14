@@ -32,10 +32,14 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 ```
 
 ## Model 1 SIM~ARMS
+
+
+### scatterplot
 ```{r}
 plot(SIMS~ARM,data= data)
 ```
-### scatterplot
+
+Looking at the scatter plot i can see that there is a linear relationship between the Simulation and Arms
 
 ### Numerical results
 
