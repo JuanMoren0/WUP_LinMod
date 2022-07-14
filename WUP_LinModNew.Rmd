@@ -32,7 +32,9 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 ```
 
 ## Model 1 SIM~ARMS
-
+```{r}
+plot(SIMS~ARM,data= data)
+```
 ### scatterplot
 
 ### Numerical results
