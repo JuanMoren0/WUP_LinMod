@@ -72,9 +72,13 @@ plot(SIMS~GRIP, data=data)
 
 ### Numerical results 
 
+```{r}
+cor(SIMS~GRIP,data=data)
+```
 
 ### Inferential  (Build model.2)
-  
+
+
 
 #### predict model.2 at target point
 
