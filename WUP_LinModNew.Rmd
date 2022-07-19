@@ -162,7 +162,12 @@ model 1 reduced the reduction in residual square, and it   can be seen as the di
 anova(model.2, model.3)
 ```
 
-In this data we can see that model 2 actually beat model   3, by 55 meaning that useing model 2 would be better then   model 3.  
+In this data we can see that model 2 actually beat model   3, by 55 meaning that using model 2 would be better then   model 3.  
 
 ## Informally compare Model.1 with model.2
 
+```{r}
+anova(model.1, model.2)
+```
+
+Doing a Anova test between model 1 and model 2 as we had   done before with different models, we see that model 2   still stands on top being the model we should be using in   this situation.  
