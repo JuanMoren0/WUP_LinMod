@@ -137,6 +137,8 @@ model.3 <- lm(SIMS~ARM+GRIP,data=data)
 summary.lm(model.3)
 ```
 
+Just like before in the numerical result we can see that   in this data sheet we have a adjusted R-square of 53%,   higher then any of the other ones that we have seen alone.   Meaning that there is a relationship of a liner line and   the graph.  
+
 #### predict model.3 at target point
   
 ```{r}
