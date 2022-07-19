@@ -63,10 +63,14 @@ the slope is 0.5 and its explaining 46% of the data that wasn't explained by ear
 TP <- data.frame(ARM=88, GRIP=94)
 predict(model.1, TP, interval ="prediction")
 ```
-
+This is the process of using a code to predict the targets   point for arm when its 94% value or 94% confident where   the target point where lie.  
 
 #### scatterplot with model fit
-  
+```{r}
+SAP + geom_point() + geom_lm()
+```
+
+The line seen in the scatter plot is the prediction line   which is taking the target point from above and adding it   to the scatter plot from earlier.  
 
 ## Model 2 SIM~GRIP
 
