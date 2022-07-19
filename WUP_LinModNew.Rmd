@@ -150,7 +150,18 @@ in the prediction model it might be hard to see but notice   how the fit from th
 ## Comparing nested models ANOVA Test
 
 ### Model.1 vs Model.3
+```{r}
+anova(model.1, model.3)
+```
+
+model 1 reduced the reduction in residual square, and it   can be seen as the difference is 30 meaning the third   model would be best to use in this situation.  
+
 ### Model.2 vs Model.3
+
+```{r}
+anova(model.2, model.3)
+```
+
 
 ## Informally compare Model.1 with model.2
 
