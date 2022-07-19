@@ -39,7 +39,6 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 SAP <- ggplot(data,aes(y=SIMS,x=ARM))
 SAP + geom_point()
 ```
-```
 
 Looking at the scatter plot i can see that there is a linear relationship between the Simulation and Arms
 
@@ -50,6 +49,7 @@ cor(SIMS~ARM,data=data)
 The coefficient is close to one meaning that the simulation isn't far off with its data but still not a completely strong enough data.
 
 ### Inferential  (Build model.1)
+
 ```{r}
 model.1 <- lm(SIMS~ARM,data=data)
 summary.lm(model.1)
@@ -58,6 +58,11 @@ the slope is 0.5 and its explaining 46% of the data that wasn't explained by ear
 
 
 #### Predict at target point
+
+```{r}
+TP <- data.frame(ARM=88, GRIP=94)
+predict(model.1, TP, interval ="prediction")
+```
 
 
 #### scatterplot with model fit
@@ -68,9 +73,7 @@ the slope is 0.5 and its explaining 46% of the data that wasn't explained by ear
 
 
 ### Now add in scatterplot
-```{r}
-plot(SIMS~GRIP, data=data)
-```
+
 
 ### Numerical results 
 
