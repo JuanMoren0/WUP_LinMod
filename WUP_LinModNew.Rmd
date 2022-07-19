@@ -144,6 +144,8 @@ Just like before in the numerical result we can see that   in this data sheet we
 ```{r}
 predict(model.3, TP, interval ="prediction")
 ```
+in the prediction model it might be hard to see but notice   how the fit from the data is actually between what was   predicted from Arms and Grip. The same can also be said   that the lower and upper part are also between the two   other factors.  
+
 
 ## Comparing nested models ANOVA Test
 
