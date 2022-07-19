@@ -36,7 +36,9 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 
 ### scatterplot
 ```{r}
-plot(SIMS~ARM,data= data)
+SAP <- ggplot(data,aes(y=SIMS,x=ARM))
+SAP + geom_point()
+```
 ```
 
 Looking at the scatter plot i can see that there is a linear relationship between the Simulation and Arms
@@ -52,7 +54,7 @@ The coefficient is close to one meaning that the simulation isn't far off with i
 model.1 <- lm(SIMS~ARM,data=data)
 summary.lm(model.1)
 ```
-the slope is 0.5 and its explaing 46% of the data that wasn't explained by earlier data tables.
+the slope is 0.5 and its explaining 46% of the data that wasn't explained by earlier data tables.
 
 
 #### Predict at target point
