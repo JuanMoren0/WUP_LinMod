@@ -82,13 +82,15 @@ The line seen in the scatter plot is the prediction line   which is taking the t
 SGP <- ggplot(data,aes(y=SIMS,x=ARM))
 SGP + geom_point()
 ```
-Here we have a visual about the data. which aligns with the findings from the case study.
+
+Here we have a visual about the data. which aligns with the findings from the case study. 
 
 ### Numerical results 
 
 ```{r}
 cor(SIMS~GRIP,data=data)
 ```
+Almost the same as before, the numerical result came close to 0 which means we are still not to far off with the data but still could use more data analysis.  
 
 ### Inferential  (Build model.2)
 
