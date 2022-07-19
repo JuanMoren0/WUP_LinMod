@@ -94,9 +94,19 @@ Almost the same as before, the numerical result came close to 0 which means we a
 
 ### Inferential  (Build model.2)
 
+```{r}
+model.2 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.1)
+```
 
+In the data sheet above we can see more detailed   information inn relation of the Simulation and Grip and   once again explaining 46% of the data.  
 
 #### predict model.2 at target point
+
+```{r}
+predict(model.2, TP, interval ="prediction")
+```
+We can now see the prediction model for the simulation and grip of what would make a good canidate to be hired for   the job.  
 
 #### now add the model fit to our plot for model.2
   
