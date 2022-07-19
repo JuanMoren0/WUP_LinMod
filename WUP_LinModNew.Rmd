@@ -52,7 +52,7 @@ The coefficient is close to one meaning that the simulation isn't far off with i
 model.1 <- lm(SIMS~ARM,data=data)
 summary.lm(model.1)
 ```
-the slope is 0.5 and its explaing 46% of the data that wasnt explained by earlier data tables.
+the slope is 0.5 and its explaing 46% of the data that wasn't explained by earlier data tables.
 
 
 #### Predict at target point
@@ -63,8 +63,12 @@ the slope is 0.5 and its explaing 46% of the data that wasnt explained by earlie
 
 ## Model 2 SIM~GRIP
 
-### Now add in scatterplot
 
+
+### Now add in scatterplot
+```{r}
+plot(SIMS~GRIP, data=data)
+```
 
 ### Numerical results 
 
