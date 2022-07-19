@@ -101,15 +101,22 @@ summary.lm(model.1)
 
 In the data sheet above we can see more detailed   information inn relation of the Simulation and Grip and   once again explaining 46% of the data.  
 
+
 #### predict model.2 at target point
 
 ```{r}
 predict(model.2, TP, interval ="prediction")
 ```
-We can now see the prediction model for the simulation and grip of what would make a good canidate to be hired for   the job.  
+We can now see the prediction model for the simulation and grip of what would make a good candidate to be hired for   the job.  
 
 #### now add the model fit to our plot for model.2
   
+  
+```{r}
+SGP + geom_point() + geom_lm()
+```
+
+Taking the prediction data from above we can added to our   graph and see that there is a slight linear relation ship   with the scatter plot but it is not one that cant be seen   right in the beggining.  
 
 
 ## Model 3 SIM~ARM+GRIP
