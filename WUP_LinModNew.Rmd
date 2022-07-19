@@ -96,10 +96,10 @@ Almost the same as before, the numerical result came close to 0 which means we a
 
 ```{r}
 model.2 <- lm(SIMS~GRIP,data=data)
-summary.lm(model.1)
+summary.lm(model.2)
 ```
 
-In the data sheet above we can see more detailed   information inn relation of the Simulation and Grip and   once again explaining 46% of the data.  
+In the data sheet above we can see more detailed   information inn relation of the Simulation and Grip and   once again explaining 40% of the data.  
 
 
 #### predict model.2 at target point
@@ -116,19 +116,32 @@ We can now see the prediction model for the simulation and grip of what would ma
 SGP + geom_point() + geom_lm()
 ```
 
-Taking the prediction data from above we can added to our   graph and see that there is a slight linear relation ship   with the scatter plot but it is not one that cant be seen   right in the beggining.  
+Taking the prediction data from above we can added to our   graph and see that there is a slight linear relation ship   with the scatter plot but it is not one that cant be seen   right in the beginning.  
 
 
 ## Model 3 SIM~ARM+GRIP
 
+
 ### Numerical results (cor)
 
-`
-  
+```{r}
+cor(SIMS~ARM+GRIP,data=data)
+```
+
+No longer looking into just one variable we are now   looking at two variables at the same time, notice how the   numerical results of both arm and grip is higher then if   we were to look at one on its own. surely conforming out   theory.  
+
 ### Inferential  (Build 2-dimentional model.3)
+
+```{r}
+model.3 <- lm(SIMS~ARM+GRIP,data=data)
+summary.lm(model.3)
+```
 
 #### predict model.3 at target point
   
+```{r}
+predict(model.3, TP, interval ="prediction")
+```
 
 ## Comparing nested models ANOVA Test
 
