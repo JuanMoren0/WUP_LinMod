@@ -78,6 +78,11 @@ The line seen in the scatter plot is the prediction line   which is taking the t
 
 ### Now add in scatterplot
 
+```{r}
+SGP <- ggplot(data,aes(y=SIMS,x=ARM))
+SGP + geom_point()
+```
+Here we have a visual about the data. which aligns with the findings from the case study.
 
 ### Numerical results 
 
